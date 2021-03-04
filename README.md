@@ -8,7 +8,7 @@ simulation model.
 
 ## Installation
 
-Binalyzer VMF is published on [PyPI] and can be installed from there:
+Binalyzer VMF is published on [PyPI](https://pypi.org/) and can be installed from there:
 
 ```sh
 ~$ pip3 install binalyzer-vmf
