@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Binalyzer VMF Example",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/../binalyzer/examples/pcap_app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/../.venv/bin/python3"
+        },
+        {
+            "name": "Binalyzer VMF Unit Test",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/../.venv/bin/pytest",
+            "args": [
+                "-v",
+                "../binalyzer-vmf/tests/test_cli.py::test_vmf_missing_input_file"
+            ],
+            "env": {
+                "PYTHONPATH": "binalyzer"
+            },
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/../.venv/bin/python3"
+        },
+    ]
+}
